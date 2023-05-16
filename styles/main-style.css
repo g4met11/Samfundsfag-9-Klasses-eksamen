@@ -224,7 +224,7 @@
 .main__content h2 {
     font-size: 4rem;
     background-color: #2a303c;
-    background-image: linear-gradient(to top, #3b2dd7 0%, #160a48 100%);
+    /* background-image: linear-gradient(to top, #3b2dd7 0%, #160a48 100%); */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -239,17 +239,18 @@
 }
 
 .main__btn {
-    font-size: 1rem;
-    background-image: linear-gradient(to top, #3b2dd7 0%, #160a48 100%);
-    padding: 14px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
     border: none;
-    border-radius: 4px;
-    color: #fff;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
     outline: none;
+    border-radius: 4px;
+    background: #14242c;
+    color: #ffffff;
 }
 
 .main__btn {
@@ -259,20 +260,9 @@
     text-decoration: none;
 }
 
-.main__btn:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #211978;
-    transition: all 0.35s;
-    border-radius: 4px;
-}
-
 .main__btn:hover {
-    color: #fff;
+    background: #233e4b;
+    transition: all 0.3s ease;
 }
 
 .main__btn:hover:after {
@@ -287,6 +277,21 @@
     height: 80%;
     width: 80%;
 }
+
+div .main__content {
+    width: 340px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+}
+
+
+
+
+
+
 
 /* Mobile */
 @media screen and (max-width: 786px) {
@@ -337,18 +342,4 @@
         padding: 12px 36px;
         margin: 2.5rem 0; 
     }
-}
-
-div .main__content {
-    width: 340px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
-    position: absolute;
-    top:25%;
-}
-
-div .stembtn1 {
-    padding: 12px 36px;
-    margin: 2.5rem 0; 
 }
