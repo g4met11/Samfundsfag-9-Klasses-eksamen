@@ -211,6 +211,16 @@
     position: relative;
 }
 
+.main__container h1 {
+    font-size: 2rem;
+    background-color: #000000;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 .main__content h1 {
     font-size: 2rem;
     background-color: #000000;
@@ -236,6 +246,10 @@
     margin-top: 1rem;
     font-size: 0.75rem;
     font-weight: 700;
+}
+
+.politiker1 img {
+   width: 150px;
 }
 
 .main__btn {
