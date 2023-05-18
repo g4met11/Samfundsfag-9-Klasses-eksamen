@@ -248,9 +248,7 @@
     font-weight: 700;
 }
 
-.politiker1 img {
-   width: 150px;
-}
+
 
 .main__btn {
     display: flex;
@@ -292,20 +290,83 @@
     width: 80%;
 }
 
-div .main__content {
+.politiker1 img {
+    width: 150px;
+}
+.politiker1 {
     width: 340px;
     padding: 10px;
     border: 5px solid gray;
     margin: 0;
     position: absolute;
-    top: 25%;
+    top: 5%;
+    right: 460px;
 }
 
+.politiker2 img {
+    width: 150px;
+}
+.politiker2 {
+    width: 340px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    right: 25px;
+}
 
+.politiker3 img {
+    width: 150px;
+}
+.politiker3 {
+    width: 340px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    right: 900px;
+}
 
+.politiker4 img {
+    width: 150px;
+}
+.politiker4 {
+    width: 340px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    right: 460px;
+}
 
+.politiker5 img {
+    width: 150px;
+}
+.politiker5 {
+    width: 340px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    right: 25px;
+}
 
-
+.politiker6 img {
+    width: 150px;
+}
+.politiker6 {
+    width: 340px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    right: 900px;
+}
 
 /* Mobile */
 @media screen and (max-width: 786px) {
