@@ -290,43 +290,45 @@
     width: 80%;
 }
 
-.politiker1 img {
+.Socialpolitiker1 img {
     width: 150px;
 }
-.politiker1 {
+.Socialpolitiker1 {
     width: 340px;
     padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
+    /* border: 3.5px solid gray; */
+    margin-top: 60px;
+    left: 0;
     position: absolute;
     top: 5%;
-    right: 460px;
 }
 
-.politiker2 img {
+.Socialpolitiker2 img {
     width: 150px;
 }
-.politiker2 {
+.Socialpolitiker2 {
     width: 340px;
     padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
+    /* border: 3.5px solid gray; */
+    margin-top: 60px;
     position: absolute;
     top: 5%;
-    right: 25px;
+    left: -3.25px;
+    margin-left: 425px;
 }
 
-.politiker3 img {
+.Socialpolitiker3 img {
     width: 150px;
 }
-.politiker3 {
+.Socialpolitiker3 {
     width: 340px;
     padding: 10px;
-    border: 5px solid gray;
-    margin: 0;
+    /* border: 3.5px solid gray; */
+    margin-top: 30px;
+    margin-left: 850px;
+    left: -3.25px;
     position: absolute;
-    top: 5%;
-    right: 900px;
+    top: 10%;
 }
 
 .politiker4 img {
@@ -335,7 +337,7 @@
 .politiker4 {
     width: 340px;
     padding: 10px;
-    border: 5px solid gray;
+    border: 3.5px solid gray;
     margin: 0;
     position: absolute;
     top: 60%;
@@ -348,7 +350,7 @@
 .politiker5 {
     width: 340px;
     padding: 10px;
-    border: 5px solid gray;
+    border: 3.5px solid gray;
     margin: 0;
     position: absolute;
     top: 60%;
@@ -361,7 +363,7 @@
 .politiker6 {
     width: 340px;
     padding: 10px;
-    border: 5px solid gray;
+    border: 3.5px solid gray;
     margin: 0;
     position: absolute;
     top: 60%;
@@ -418,3 +420,447 @@
         margin: 2.5rem 0; 
     }
 }
+
+/* Dropdown menu */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtnSocial {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown .dropbtnSocial:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .dropdown .dropdown-contentSocial {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    padding: 8px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  
+  .Socialpolitiker1,
+  .Socialpolitiker2,
+  .Socialpolitiker3 {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 65px;
+  }
+  
+  .dropdown .dropdown-contentSocial a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #14242c;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  /* .dropdown:hover .dropdown-content {
+    display: block;
+  } */
+  
+  .dropdown .dropdown-contentSocial a:hover {
+    background-color: #233e4b;
+  }
+
+
+.partibutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0;
+    left: -3.25px;
+}
+
+.partibutton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* padding: -10px -20px; */
+    height: 100%;
+    width: 147%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #14242c;
+    color: #fff;
+    left: -3.25px;
+}
+
+.partibutton:hover {
+    background: #233e4b;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Venstre */
+.dropdown .dropdown-contentV {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    padding: 8px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  
+  .Socialpolitiker1,
+  .Socialpolitiker2,
+  .Socialpolitiker3 {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 65px;
+  }
+  
+  .dropdown .dropdown-contentV a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #14242c;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown .dropdown-contentV a:hover {
+    background-color: #233e4b;
+  }
+
+  .dropbtnV {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown .dropbtnV:hover {
+    background-color: #e6e6e6;
+  }
+
+  .dropdown-container.open .dropdown-content {
+    display: block;
+  }
+
+  ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Style to display main list items vertically */
+  ul.vertical li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style to push down other headers when submenu is opened */
+  .dropdown-content.open {
+    margin-top: 20px; /* Adjust this value as needed */
+  }
+
+  /* Konservative */
+.dropdown .dropdown-contentC {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    padding: 8px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  
+  .Socialpolitiker1,
+  .Socialpolitiker2,
+  .Socialpolitiker3 {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 65px;
+  }
+  
+  .dropdown .dropdown-contentC a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #14242c;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown .dropdown-contentC a:hover {
+    background-color: #233e4b;
+  }
+
+  .dropbtnC {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown .dropbtnC:hover {
+    background-color: #e6e6e6;
+  }
+
+  /* SF */
+.dropdown .dropdown-contentSF {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    padding: 8px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  
+  .Socialpolitiker1,
+  .Socialpolitiker2,
+  .Socialpolitiker3 {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 65px;
+  }
+  
+  .dropdown .dropdown-contentSF a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #14242c;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown .dropdown-contentSF a:hover {
+    background-color: #233e4b;
+  }
+
+  .dropbtnSF {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown .dropbtnSF:hover {
+    background-color: #e6e6e6;
+  }
+
+    /* Enhedslisten */
+.dropdown .dropdown-contentØ {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    padding: 8px;
+    background-color: #fff;
+    margin-top: 10px;
+  }
+  
+  .Socialpolitiker1,
+  .Socialpolitiker2,
+  .Socialpolitiker3 {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 65px;
+  }
+  
+  .dropdown .dropdown-contentØ a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #14242c;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown .dropdown-contentØ a:hover {
+    background-color: #233e4b;
+  }
+
+  .dropbtnØ {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown .dropbtnØ:hover {
+    background-color: #e6e6e6;
+  }
+    /* Radikale */
+    .dropdown .dropdown-contentB {
+        display: none;
+        position: absolute;
+        z-index: 3;
+        padding: 8px;
+        background-color: #fff;
+        margin-top: 10px;
+      }
+      
+      .Socialpolitiker1,
+      .Socialpolitiker2,
+      .Socialpolitiker3 {
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 8px;
+        margin-top: 65px;
+      }
+      
+      .dropdown .dropdown-contentB a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 10px 20px;
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: #14242c;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown .dropdown-contentB a:hover {
+        background-color: #233e4b;
+      }
+    
+      .dropbtnB {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f2f2f2;
+        color: #333;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .dropdown .dropbtnB:hover {
+        background-color: #e6e6e6;
+      }

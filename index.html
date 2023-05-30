@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Valgstemme eksamen</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+  <title>Valgstemme eksamen</title>
 </head>
 <body>
-    <!--NAVBAR-->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" id="navbar__logo">VALG STEMME</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <!-- <li class="navbar__item">
+  <!--NAVBAR-->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">KOMMUNALVALG</a>
+      <div class="navbar__toggle" id="mobile-menu"></div>
+      <ul class="navbar__menu">
+        <!-- <li class="navbar__item">
                     <a href="index.html" class="navbar__links">Stem</a>
                 </li>
                 <li class="navbar__item">
@@ -28,18 +26,16 @@
                 <li class="navbar__item">
                     <a href="scripts.html" class="navbar__links"> Scripts </a>
                 </li> -->
-                <li class="navbar__btn">
-                    <a href="login.html" class="button">Log in</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero -->
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <div class="politiker1">
+        <li class="navbar__btn">
+          <a href="login.html" class="button">Log in</a>
+        </li>
+      </ul>
+    </div>
+  </nav><!-- Hero -->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <!-- <div class="politiker1">
                     <h1>Polly Bak Dutchske</h1>
                     <img src="/images/PollyBakDutchske.jpg" alt="foto">
                     <a href="stemt.html" class="button">Stem</a>
@@ -68,12 +64,165 @@
                     <h1>Polly Bak Dutchske</h1>
                     <img src="/images/PollyBakDutchske.jpg" alt="foto">
                     <a href="stemt.html" class="button">Stem</a>
+                </div> -->
+        <!-- Dropdown menu-->
+        <div class="flex-container">
+          <!-- <ul class="menu">
+                        <li>
+                          <input type="radio" name="menuopt" id="drop2" />
+                          <label class="opener" for="drop2">Social Demokratiet</label>
+                          <label class="closer" for="dropclose">Social Demokratiet</label>
+                          <ul>
+                            <li class="politiker1">
+                                <h1>Polly Bak Dutchske</h1>
+                                <img src="/images/PollyBakDutchske.jpg" alt="foto">
+                                <a href="stemt.html" class="button">Stem</a>
+                            </li>
+                            <li class="politiker2">
+                                <h1>Polly Bak Dutchske</h1>
+                                <img src="/images/PollyBakDutchske.jpg" alt="foto">
+                                <a href="stemt.html" class="button">Stem</a>
+                            </li>
+                            <li class="politiker3">
+                                <h1>Polly Bak Dutchske</h1>
+                                <img src="/images/PollyBakDutchske.jpg" alt="foto">
+                                <a href="stemt.html" class="button">Stem</a>
+                            </li>
+                          </ul>
+                          <input type="radio" name="menuopt" id="dropclose" />
+                        </li>
+                    </ul> -->
+          <ul>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtnSocial">Social Demokratiet</button>
+                <div class="dropdown-contentSocial">
+                  <div class="partibutton">
+                    <a href="stemt.html" class="partibutton">Stem på social demokratiet</a>
+                  </div>
+                  <div class="Socialpolitiker1">
+                    <h1>Polly Bak Dutchske</h1><img src="/images/PollyBakDutchske.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                  </div>
+                  <div class="Socialpolitiker2">
+                    <h1>Jacob Bundsgaard</h1><img src="/images/jacobbundsgaard.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                  </div>
+                  <div class="Socialpolitiker3">
+                    <h1>Anette Poulsen</h1><img src="/images/anettepoulsen.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                  </div>
                 </div>
-            </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown-container">
+                <div class="dropdown">
+                  <button class="dropbtnV">Venstre</button>
+                  <div class="dropdown-contentV">
+                    <div class="partibutton">
+                      <a href="stemt.html" class="partibutton">Stem på venstre</a>
+                    </div>
+                    <div class="Socialpolitiker1">
+                      <h1>Christian Budde</h1><img src="/images/christianbudde.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                    </div>
+                    <div class="Socialpolitiker2">
+                      <h1>Mathilde Hjort Bressum</h1><img src="/images/MathildeHjortBressum.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                    </div>
+                    <div class="Socialpolitiker3">
+                      <h1>Bünyamin Simsek</h1><img src="/images/BünyaminSimsek.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="dropdown-container">
+                  <div class="dropdown">
+                    <button class="dropbtnC">Konservative</button>
+                    <div class="dropdown-contentC">
+                      <div class="partibutton">
+                        <a href="stemt.html" class="partibutton">Stem på konservative</a>
+                      </div>
+                      <div class="Socialpolitiker1">
+                        <h1>Christian Baller</h1><img src="/images/Christian Baller.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                      <div class="Socialpolitiker2">
+                        <h1>Peter Sporleder</h1><img src="/images/Peter Sporleder.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                      <div class="Socialpolitiker3">
+                        <h1>Purnima Erichsen</h1><img src="/images/Purnima Erichsen.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown-container">
+                  <div class="dropdown">
+                    <button class="dropbtnSF">SF</button>
+                    <div class="dropdown-contentSF">
+                      <div class="partibutton">
+                        <a href="stemt.html" class="partibutton">Stem på SF</a>
+                      </div>
+                      <div class="Socialpolitiker1">
+                        <h1>Thomas Medom</h1><img src="/images/Thomas Medom.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                      <div class="Socialpolitiker2">
+                        <h1>Liv Gro Jensen</h1><img src="/images/Liv Gro Jensen.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                      <div class="Socialpolitiker3">
+                        <h1>Mette Bjerre</h1><img src="/images/Mette Bjerre.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown-container">
+                  <div class="dropdown">
+                    <button class="dropbtnØ">Enhedslisten</button>
+                    <div class="dropdown-contentØ">
+                      <div class="partibutton">
+                        <a href="stemt.html" class="partibutton">Stem på Enhedslisten</a>
+                      </div>
+                      <div class="Socialpolitiker1">
+                        <h1>Laura Bryhl</h1><img src="/images/Laura Bryhl.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                      <div class="Socialpolitiker2">
+                        <h1>Katrine Vinther Nielsen</h1><img src="/images/Katrine Vinther Nielsen.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                      <div class="Socialpolitiker3">
+                        <h1>Thure Hastrup</h1><img src="/images/Thure Hastrup0.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown-container">
+                  <div class="dropdown">
+                    <button class="dropbtnSF">Radiklae</button>
+                    <div class="dropdown-contentSF">
+                      <div class="partibutton">
+                        <a href="stemt.html" class="partibutton">Stem på Radiklae</a>
+                      </div>
+                      <div class="Socialpolitiker1">
+                        <h1>Thomas Medom</h1><img src="/images/Thomas Medom.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                      <div class="Socialpolitiker2">
+                        <h1>Liv Gro Jensen</h1><img src="/images/Liv Gro Jensen.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                      <div class="Socialpolitiker3">
+                        <h1>Mette Bjerre</h1><img src="/images/Mette Bjerre.jpg" alt="foto"> <a href="stemt.html" class="button">Stem</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+          </ul>
         </div>
+      </div>
     </div>
-
-    <script src="https://kit.fontawesome.com/f111d31c0a.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-   </body>
+  </div>
+  <script src="https://kit.fontawesome.com/f111d31c0a.js" crossorigin="anonymous"></script> 
+  <script src="app.js"></script>
+</body>
 </html>
