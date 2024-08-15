@@ -1,866 +1,308 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  overflow: hidden;
 }
 
 .navbar {
-    background:  #bb1d2c;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  background:  #bb1d2c;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 
 #navbar__logo {
-    background-color: #ffffff;
-    /* background-image: linear-gradient(to top, #3b2dd7 0%, #160a48 100%); */
-    Background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.fm-gem {
-    margin-right: 0.5rem;
+  background-color: #ffffff;
+  Background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .navbar__menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-}
-
-.navbar__item {
-    height: 80px;
-}
-
-.navbar__links {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-}
-
-.navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
 }
 
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #14242c;
-    color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  background: #14242c;
+  color: #fff;
 }
 
 .button:hover {
-    background: #233e4b;
-    transition: all 0.3s ease;
-}
-
-.navbar__links:hover {
-    color: #233e4b;
-    transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 960px) {
-    .navbar__container {
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0;
-    }
-
-    .navbar__menu{
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000px;
-        opacity: 0;
-        transition: all 0.5s ease;
-        height: 50vh;
-        z-index: -1;
-    }
-
-    .navbar__menu.active{
-        background: #242933;
-        top: 100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 60vh;
-        font-size: 1.6rem;
-    }
-
-    #navbar__logo {
-        padding-left: 25px;
-    }
-
-    .navbar__toggle .bar{
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #fff;
-    }
-
-    .navbar__item {
-        width: 100%;
-    }
-
-    .navbar__links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-
-    #mobile-menu {
-        position:  absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
-    }
-
-    .navbar__btn {
-        padding-bottom: 2rem;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    }
-
-    .navbar__toggle .bar{
-        display: block;
-        cursor: pointer;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(2){
-        opacity: 0;
-    }
-    #mobile-menu.is-active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    #mobile-menu.is-active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
+  background: #233e4b;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 /* Hero */
 
 .main {
-    background-color: #ffffff;
-    grid-template-columns: lfr lfr;
-    align-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    height: 90vh;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-    position: relative;
-}
-
-.main__container h1 {
-    font-size: 2rem;
-    background-color: #000000;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.main__content h1 {
-    font-size: 2rem;
-    background-color: #000000;
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.main__content h2 {
-    font-size: 4rem;
-    background-color: #2a303c;
-    /* background-image: linear-gradient(to top, #3b2dd7 0%, #160a48 100%); */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.main__content p {
-    margin-top: 1rem;
-    font-size: 0.75rem;
-    font-weight: 700;
+  background-color: #ffffff;
+  grid-template-columns: lfr lfr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 50px;
+  position: relative;
 }
 
 
 
-.main__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #14242c;
-    color: #ffffff;
+/* Dropdown Button */
+.dropbtn {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background: #14242c;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
-.main__btn {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
+/* Dropdown button on hover */
+.dropbtn:hover {
+  background-color: #233e4b;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.main__btn:hover {
-    background: #233e4b;
-    transition: all 0.3s ease;
-}
-
-.main__btn:hover:after {
-    width: 100%;
-}
-
-.main__img--container {
-    text-align: 100%;
-}
-
-#main__img {
-    height: 80%;
-    width: 80%;
-}
-
-.Socialpolitiker1 img {
-    width: 150px;
-}
-.Socialpolitiker1 {
-    width: 340px;
-    padding: 10px;
-    /* border: 3.5px solid gray; */
-    margin-top: 60px;
-    left: 0;
-    position: absolute;
-    top: 5%;
-}
-
-.Socialpolitiker2 img {
-    width: 150px;
-}
-.Socialpolitiker2 {
-    width: 340px;
-    padding: 10px;
-    /* border: 3.5px solid gray; */
-    margin-top: 60px;
-    position: absolute;
-    top: 5%;
-    left: -3.25px;
-    margin-left: 425px;
-}
-
-.Socialpolitiker3 img {
-    width: 150px;
-}
-.Socialpolitiker3 {
-    width: 340px;
-    padding: 10px;
-    /* border: 3.5px solid gray; */
-    margin-top: 30px;
-    margin-left: 850px;
-    left: -3.25px;
-    position: absolute;
-    top: 10%;
-}
-
-.politiker4 img {
-    width: 150px;
-}
-.politiker4 {
-    width: 340px;
-    padding: 10px;
-    border: 3.5px solid gray;
-    margin: 0;
-    position: absolute;
-    top: 60%;
-    right: 460px;
-}
-
-.politiker5 img {
-    width: 150px;
-}
-.politiker5 {
-    width: 340px;
-    padding: 10px;
-    border: 3.5px solid gray;
-    margin: 0;
-    position: absolute;
-    top: 60%;
-    right: 25px;
-}
-
-.politiker6 img {
-    width: 150px;
-}
-.politiker6 {
-    width: 340px;
-    padding: 10px;
-    border: 3.5px solid gray;
-    margin: 0;
-    position: absolute;
-    top: 60%;
-    right: 900px;
-}
-
-/* Mobile */
-@media screen and (max-width: 786px) {
-    .main__container {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .main__content {
-        text-align: center;
-        margin-bottom: 4rem;
-    }
-
-    .main__content h1 {
-        font-size: 2.5rem;
-    }
-    
-    .main__content h2 {
-        font-size: 2rem;
-    }
-    
-    .main__content p {
-        margin-top: 1rem;
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 786px) {
-    .main__content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
-    }
-    
-    .main__content h2 {
-        font-size: 2rem;
-    }
-    
-    .main__content p {
-        margin-top: 2rem;
-        font-size: 1.5rem;
-    }
-
-    .main__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0; 
-    }
-}
-
-/* Dropdown menu */
-
+/* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropbtnSocial {
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    color: #333;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dropdown .dropbtnSocial:hover {
-    background-color: #e6e6e6;
-  }
-  
-  .dropdown .dropdown-contentSocial {
-    display: none;
-    position: absolute;
-    z-index: 3;
-    padding: 8px;
-    background-color: #fff;
-    margin-top: 10px;
-  }
-  
-  .Socialpolitiker1,
-  .Socialpolitiker2,
-  .Socialpolitiker3 {
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
-    margin-top: 65px;
-  }
-  
-  .dropdown .dropdown-contentSocial a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #14242c;
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  /* .dropdown:hover .dropdown-content {
-    display: block;
-  } */
-  
-  .dropdown .dropdown-contentSocial a:hover {
-    background-color: #233e4b;
-  }
+  position: relative;
+  display: list-item;
+  list-style: none;
+}
 
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: relative;
+  text-align: center;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  margin-top: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-.partibutton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80px;
-    margin: 0;
-    left: -3.25px;
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.Politiker {
+  display: inline-block;
+  padding: 10px;
+  border: 3.5px solid #122027;
+  width: 425px;
+  border-radius: 3px;
+  margin: 20px 20px 40px 20px;
+  text-align: center;
+}
+
+.stemButton {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  border-radius: 4px;
+  background: #14242c;
+  color: #fff;
+  margin: 0px 10px 0px 10px;
+}
+
+.stemButton:hover {
+  background: #233e4b;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.PartiStem {
+  display: inline-block;
+  padding: 10px;
+  width: 425px;
+  border-radius: 3px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
 }
 
 .partibutton {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    /* padding: -10px -20px; */
-    height: 100%;
-    width: 147%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #14242c;
-    color: #fff;
-    left: -3.25px;
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  border-radius: 4px;
+  background: #14242c;
+  color: #fff;
+  margin: 0px 10px 0px 10px;
 }
 
 .partibutton:hover {
-    background: #233e4b;
-    transition: all 0.3s ease;
+  background: #233e4b;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.Politiker img {
+  width: 150px;
+  margin-bottom: 20px;
+}
 
+/* Login Popup window */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #14242c;
+  background: #fefefe;
+}
 
-/* Venstre */
-.dropdown .dropdown-contentV {
-    display: none;
-    position: absolute;
-    z-index: 3;
-    padding: 8px;
-    background-color: #fff;
-    margin-top: 10px;
-  }
-  
-  .Socialpolitiker1,
-  .Socialpolitiker2,
-  .Socialpolitiker3 {
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
-    margin-top: 65px;
-  }
-  
-  .dropdown .dropdown-contentV a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #14242c;
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown .dropdown-contentV a:hover {
-    background-color: #233e4b;
-  }
+input[type=text]:focus, input[type=password]:focus {
+  background-image: linear-gradient( #fefefe , #f1f1f1 );
+  border-radius: 3px;
+  border-bottom: 3px solid #14242c;
+  outline: none;
+}
+.container h1 {
+  margin-bottom: 50px;
+  text-align: center;
+  color: bb1d2c;
+}
 
-  .dropbtnV {
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    color: #333;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dropdown .dropbtnV:hover {
-    background-color: #e6e6e6;
-  }
+/* Styles for buttons on popup */
+.loginBtn {
+  border: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-weight: 600;
+  font-size: medium;
+  padding: 10px 18px;
+  background-color: #14242c;
+  color: #ffffff;
+}
 
-  .dropdown-container.open .dropdown-content {
-    display: block;
-  }
+.loginBtn:hover {
+  background-color: #233e4b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-  ul li {
-    display: block;
-    margin-bottom: 10px;
-  }
+span.signUpBtn {
+  font-size: 1.5vh;
+}
 
-  /* Style to display main list items vertically */
-  ul.vertical li {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  /* Style to push down other headers when submenu is opened */
-  .dropdown-content.open {
-    margin-top: 20px; /* Adjust this value as needed */
-  }
+.container {
+  padding: 20px;
+  border-radius: 13px;
+}
 
-  /* Konservative */
-.dropdown .dropdown-contentC {
-    display: none;
-    position: absolute;
-    z-index: 3;
-    padding: 8px;
-    background-color: #fff;
-    margin-top: 10px;
-  }
-  
-  .Socialpolitiker1,
-  .Socialpolitiker2,
-  .Socialpolitiker3 {
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
-    margin-top: 65px;
-  }
-  
-  .dropdown .dropdown-contentC a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #14242c;
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown .dropdown-contentC a:hover {
-    background-color: #233e4b;
-  }
+span.psw {
+  font-size: 1.5vh;
+  float: right;
+  padding-bottom: 32px; 
+}
 
-  .dropbtnC {
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    color: #333;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dropdown .dropbtnC:hover {
-    background-color: #e6e6e6;
-  }
+/*Popup backgrund */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
 
-  /* SF */
-.dropdown .dropdown-contentSF {
-    display: none;
-    position: absolute;
-    z-index: 3;
-    padding: 8px;
-    background-color: #fff;
-    margin-top: 10px;
-  }
-  
-  .Socialpolitiker1,
-  .Socialpolitiker2,
-  .Socialpolitiker3 {
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
-    margin-top: 65px;
-  }
-  
-  .dropdown .dropdown-contentSF a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #14242c;
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown .dropdown-contentSF a:hover {
-    background-color: #233e4b;
-  }
+/* Popup box */
+.modal-content {
+  display: flexbox;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border-radius: 13px;
+  width: 20%;
+}
 
-  .dropbtnSF {
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    color: #333;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .dropdown .dropbtnSF:hover {
-    background-color: #e6e6e6;
-  }
+.closeContainer {
+  text-align: right;
+}
 
-    /* Enhedslisten */
-.dropdown .dropdown-contentØ {
-    display: none;
-    position: absolute;
-    z-index: 3;
-    padding: 8px;
-    background-color: #fff;
-    margin-top: 10px;
-  }
-  
-  .Socialpolitiker1,
-  .Socialpolitiker2,
-  .Socialpolitiker3 {
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
-    margin-top: 65px;
-  }
-  
-  .dropdown .dropdown-contentØ a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #14242c;
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown .dropdown-contentØ a:hover {
-    background-color: #233e4b;
-  }
+/* The Close Button (x) */
+.close {
+  position: relative;
+  margin: 2.5px;
+  font-size: 27px;
+  font-weight: bold;
+}
 
-  .dropbtnØ {
-    margin-top: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    color: #333;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    transition: background-color 0.3s ease;
-  }
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
   
-  .dropdown .dropbtnØ:hover {
-    background-color: #e6e6e6;
-  }
-    /* Radikale */
-    .dropdown .dropdown-contentB {
-        display: none;
-        position: absolute;
-        z-index: 3;
-        padding: 8px;
-        background-color: #fff;
-        margin-top: 10px;
-      }
-      
-      .Socialpolitiker1,
-      .Socialpolitiker2,
-      .Socialpolitiker3 {
-        display: block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        padding: 8px;
-        margin-top: 65px;
-      }
-      
-      .dropdown .dropdown-contentB a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        padding: 10px 20px;
-        height: 100%;
-        width: 100%;
-        border: none;
-        outline: none;
-        border-radius: 4px;
-        background: #14242c;
-        color: #fff;
-        margin-bottom: 10px;
-      }
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      
-      .dropdown .dropdown-contentB a:hover {
-        background-color: #233e4b;
-      }
-    
-      .dropbtnB {
-        margin-top: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        background-color: #f2f2f2;
-        color: #333;
-        font-size: 16px;
-        cursor: pointer;
-        margin-bottom: 10px;
-        transition: background-color 0.3s ease;
-      }
-      
-      .dropdown .dropbtnB:hover {
-        background-color: #e6e6e6;
-      }
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}

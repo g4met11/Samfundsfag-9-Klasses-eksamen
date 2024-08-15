@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/signup-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Valgstemme eksamen</title>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">Valg Navn</a>
+    </nav>
+
+    <!-- Hero -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <div class="loginBack">
+                    <form action="/action_page.php">
+                        <div class="container">
+                          <input type="text" placeholder="Email" name="email" required>
+                      
+                          <input type="password" placeholder="Password" name="psw" required>
+                      
+                          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                          
+                          <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                          </label>
+
+                            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                            <br>
+
+                          <button type="submit" class="signUpBtn">Sign Up</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/f111d31c0a.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+   </body>
+</html>

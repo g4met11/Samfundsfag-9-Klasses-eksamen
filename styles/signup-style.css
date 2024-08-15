@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+  
+.navbar {
+  background:  #bb1d2c;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navbar__logo {
+  background-color: #ffffff;
+  Background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+/* button {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 50%;
+  border-radius: 4px;
+  border: 0px;
+  background: #14242c;
+  color: #fff;
+} */
+
+button:hover {
+  background: #233e4b;
+  transition: all 0.3s ease;
+}
+
+/* Hero */
+
+.main {
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 50px;
+  position: relative;
+}
+
+.main__content p {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.loginBack {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	left: 681.5px;
+  top: 255.25px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 13px;
+  width: 540px;
+  height: 340px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 10px 0;
+  
+  display: inline-block;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid #233e4b;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-image: linear-gradient( #f1f1f1 , #ddd );
+  border-radius: 3px;
+  border-bottom: 3px solid #233e4b;
+  outline: none;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+.signUpBtn {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background: #14242c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  left: 200px;
+}
